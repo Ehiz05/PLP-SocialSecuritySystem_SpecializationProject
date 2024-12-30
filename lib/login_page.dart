@@ -42,6 +42,8 @@ class LoginPageState extends State<LoginPage> {
         prefs.setString('role', data['user']['role']);
         prefs.setString('name', data['user']['name']);
 
+        if (!mounted) return;
+
         switch (data['user']['role']) {
           case 'admin':
             Navigator.pushReplacement(
