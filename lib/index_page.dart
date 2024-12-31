@@ -40,17 +40,17 @@ class _IndexPageState extends State<IndexPage> {
         },
         children: const [
           IndexSlide(
-            imagePath: 'assets/images/onboarding1.png',
+            imagePath: 'assets/images/Intro-image.png',
             title: "Welcome to Social Security System",
             description: "Your trusted app for managing government services.",
           ),
           IndexSlide(
-            imagePath: 'assets/images/onboarding2.png',
+            imagePath: 'assets/images/easy-transaction.png',
             title: "Easy Transactions",
             description: "Effortlessly manage your financial transactions.",
           ),
           IndexSlide(
-            imagePath: 'assets/images/onboarding3.png',
+            imagePath: 'assets/images/comprehensive-service.png',
             title: "Comprehensive Services",
             description: "Request services and track applications.",
           ),

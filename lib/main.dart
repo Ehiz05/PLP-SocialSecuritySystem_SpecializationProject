@@ -107,7 +107,7 @@ class OnboardingPage extends StatelessWidget {
       title: "Welcome to Sunepa!",
       description:
           "Manage your social security easily and efficiently with our platform.",
-      imagePath: "assets/images/onboarding.png",
+      imagePath: "assets/images/main_image.png",
       onButtonPressed: () => _navigateToIndexPage(context),
     );
   }
