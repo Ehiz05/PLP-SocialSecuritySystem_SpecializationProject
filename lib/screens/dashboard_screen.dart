@@ -10,7 +10,9 @@ class DashboardScreen extends StatelessWidget {
     String userRole = 'Beneficiary'; // Replace with dynamic role retrieval
 
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 198, 212, 237),
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 198, 212, 237),
         title: Text('$userRole Dashboard'),
       ),
       body: Center(

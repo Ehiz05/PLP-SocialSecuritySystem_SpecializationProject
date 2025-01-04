@@ -8,8 +8,10 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 198, 212, 237),
       appBar: AppBar(
-        title: const Text('Login to Sunepa'),
+        backgroundColor: const Color.fromARGB(255, 198, 212, 237),
+        title: const Text('Login to the Social Security System'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

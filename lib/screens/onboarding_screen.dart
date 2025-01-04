@@ -9,6 +9,7 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 198, 212, 237),
       body: PageView(
         allowImplicitScrolling: true,
         controller: _pageController,
