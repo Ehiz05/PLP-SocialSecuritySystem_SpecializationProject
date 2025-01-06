@@ -28,15 +28,18 @@ class LoginScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                // Navigate to the dashboard
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const DashboardScreen()));
-              },
-              child: const Text('Login'),
-            ),
+                onPressed: () {
+                  // Navigate to the dashboard
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DashboardScreen()));
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                ),
+                child:
+                    const Text('Login', style: TextStyle(color: Colors.white))),
             TextButton(
               onPressed: () {
                 // Navigate to the registration screen

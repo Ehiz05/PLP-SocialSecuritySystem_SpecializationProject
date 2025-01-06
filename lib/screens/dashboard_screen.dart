@@ -19,6 +19,18 @@ class DashboardScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Adding the uploaded image
+            ClipRRect(
+              borderRadius:
+                  BorderRadius.circular(8.0), // Optional rounded corners
+              child: Image.asset(
+                'assets/images/beneficiary_page.png', // Path to your uploaded image
+                height: 200, // Adjust height as needed
+                width: 200, // Adjust width as needed
+                fit: BoxFit.cover, // Adjust the image's fit
+              ),
+            ),
+            const SizedBox(height: 20), // Space between image and text
             Text('Welcome, $userRole!', style: const TextStyle(fontSize: 20)),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -30,7 +42,13 @@ class DashboardScreen extends StatelessWidget {
                       builder: (context) => WalletScreen(role: userRole)),
                 );
               },
-              child: const Text('Go to Wallet'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueAccent,
+              ),
+              child: const Text(
+                'Go to Wallet',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),
