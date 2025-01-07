@@ -19,7 +19,7 @@ class SunepaApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => OnboardingScreen(),
+          '/': (context) => const OnboardingScreen(),
           '/home': (context) => const LoginScreen(),
         });
   }
